@@ -1,10 +1,12 @@
-import Header from './components/Header'
+import Header from './components/Header';
+import Banner from './components/Banner';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
+      <Banner />
     </div>
   );
 }
