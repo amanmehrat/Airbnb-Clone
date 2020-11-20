@@ -1,12 +1,14 @@
 import Header from './components/Header';
-import Banner from './components/Banner';
+import Home from './components/Home';
+import Footer from './components/Footer';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Banner />
+      <Home />
+      <Footer />
     </div>
   );
 }

@@ -31,6 +31,7 @@ const DatePicker = () => {
                 <People />
             </h2>
             <input
+                min={0}
                 type="number"
                 defaultValue={2}
             />
