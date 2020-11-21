@@ -7,8 +7,12 @@ import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
+import { useHistory } from 'react-router-dom';
+
 
 const DatePicker = () => {
+
+    const history = useHistory();
     const [dateRange, setDateRange] = useState([
         {
             startDate: new Date(),
@@ -35,7 +39,7 @@ const DatePicker = () => {
                 type="number"
                 defaultValue={2}
             />
-            <Button>Search Airbnb</Button>
+            <Button onClick={() => history.push('/search')}>Search Airbnb</Button>
         </div>
     )
 }
